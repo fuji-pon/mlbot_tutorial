@@ -21,7 +21,8 @@ RUN pip install --no-cache-dir \
   ccxt==4.2.72 \
   lightgbm==3.2.1 \
   TA-Lib==0.4.21 \
-  "git+https://github.com/richmanbtc/crypto_data_fetcher.git@v0.0.15#egg=crypto_data_fetcher"
+  "git+https://github.com/richmanbtc/crypto_data_fetcher.git@v0.0.15#egg=crypto_data_fetcher" \
+  backports.tarfile
 
 # matplotlibで日本語を使えるようにする
 RUN sed -i '/font\.family/d' /opt/conda/lib/python3.9/site-packages/matplotlib/mpl-data/matplotlibrc
